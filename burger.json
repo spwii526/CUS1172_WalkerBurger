@@ -1,0 +1,57 @@
+{   
+    "protein": [
+        {
+            "id": "beef",
+            "title": "Beef",
+            "steps": [0,1,2,3,4,5]
+        },
+        {
+            "id": "veggie",
+            "title": "Veggie",
+            "steps": [0,1,2,3,4,5]
+        }
+    ],
+
+    "steps": [
+        {
+          "id": "step1",
+          "type": "multiple-choice",
+          "instruction": "Choose your bun",
+          "options": ["Sesame", "Brioche", "English Muffin"],
+          "feedback": null
+        },
+        {
+          "id": "step2",
+          "type": "text",
+          "instruction": "Enter number of sauce servings",
+          "feedback": {
+            "condition": "amount > 4",
+            "message": "That's probably a little too much"
+          }
+        },
+        {
+          "id": "step3",
+          "type": "image-selection",
+          "instruction": "Delivery or Pickup?",
+          "imageOptions": [
+            { "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU4zZom19PzYWndPU5tuTg-Bad6ObcnxGM0w&s", "isCorrect": false },
+            { "url": "https://media.istockphoto.com/id/1442715955/vector/paper-lunch-bag-groceries-shopping-bag-from-recycled-paper.jpg?s=612x612&w=0&k=20&c=2Zj-c_z09V63Ocb__OekeLzt5C9NGnr9nbLbsyEr0sA=", "isCorrect": true }
+          ],
+          "feedback": null
+        },
+        {
+          "id": "step4",
+          "type": "multiple-choice",
+          "instruction": "How would you like that cooked?",
+          "options": ["Rare","Medium Rare","Medium","Medium Well","Well Done"],
+          "feedback": null
+        },
+        {
+          "id": "step5",
+          "type":"multiple-choice",
+          "instruction": "What toppings would you like?",
+          "options": ["Lettuce","Tomato","Onion","Cheese","Double Protein"],
+          "feedback": null
+        }
+      ]
+}
